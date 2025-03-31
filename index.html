@@ -53,19 +53,19 @@
 			msg.innerHTML="<br>password must contain 1 uppercase";
 			body.style.backgroundColor="red";
 		}
-		if(num==0 || num<=3)
+		else if(num==0 || num<=3)
 		{
-			msg.innerHTML+="<br>paswword shold contain atleast 4 digits";
+			msg.innerHTML="<br>paswword shold contain atleast 4 digits";
 			body.style.backgroundColor="red";
 		}
-		if(spcl!=1)
+		else if(spcl!=1)
 		{
-			msg.innerHTML+="<br>paswword shold contain exactly 1 special symbom(@/$)";
+			msg.innerHTML="<br>paswword shold contain exactly 1 special symbom(@/$)";
 			body.style.backgroundColor="red";
 		}
 		else
 		{
-			msg.innerHTML+="<br>YOUR PASSWORD VALID";
+			msg.innerHTML="<br>YOUR PASSWORD VALID";
 			body.style.backgroundColor="green";
 		}
 		console.log(num);
